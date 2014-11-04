@@ -1,0 +1,17 @@
+<html ng-app="myFiltro">
+	<head>
+		<title> Ejemplo Filtro </title>
+		<script src="resources/js/angular.min.js"></script>
+		<script src="resources/js/scriptFiltro.js"></script>
+	</head>
+	<body>
+		<div ng-controller="Controller">
+			<input ng-model="texto" type="text">
+			<br>
+			Sin filtro: {{texto}}
+			<br>
+			Con filtro: {{texto|reverse}}
+			<br>
+		</div>
+	</body>
+</html>
